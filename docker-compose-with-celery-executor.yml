@@ -5,6 +5,7 @@ networks:
 services:
   postgres:
     image: postgres:13.1
+    user: postgres
     environment:
       - POSTGRES_USER=airflow
       - POSTGRES_DB=airflow
